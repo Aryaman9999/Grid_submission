@@ -13,7 +13,6 @@ This repository contains our solutions for the **Flipkart Grid Challenge**, focu
 - [Models and Techniques](#models-and-techniques)
 - [Usage](#usage)
 - [Repository Structure](#repository-structure)
-- [Contributors](#contributors)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 - [References](#references)
@@ -121,3 +120,54 @@ The Flipkart Grid Challenge presented multiple tasks aimed at enhancing retail o
    ```bash
    git clone https://github.com/yourusername/flipkart-grid-challenge.git
    cd flipkart-grid-challenge
+
+
+2. **Create a Virtual Environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use venv\Scripts\activate
+3.**Install Dependencies:**
+   ```bash
+    pip install -r requirements.txt
+```
+### Model Files
+
+**Model Weights:**
+
+- `models/model_weight.pth`: Weights for the ResNet18 model.
+- `models/my_model.h5`: Trained VGG16 model for freshness detection.
+
+**Pre-trained Models on Hugging Face:**
+
+- ViT models for freshness detection and brand recognition are available on [Hugging Face](https://huggingface.co/).
+
+### Repository Structure
+
+```plaintext
+flipkart-grid-challenge/
+├── photos/   
+├── models/
+│   ├── model_weight.pth
+│   └── my_model.h5
+├── test_codes/
+├── requirements.txt
+├── README.md plaintext
+```
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Acknowledgements
+
+- **Flipkart** for organizing the Grid Challenge.
+- **Hugging Face** for providing a platform to host and share models.
+- **Open-source OCR Tools** like EasyOCR and PaddleOCR for their invaluable contributions.
+
+### References
+
+- [EasyOCR Documentation](https://www.jaided.ai/easyocr/)
+- [PaddleOCR GitHub Repository](https://github.com/PaddlePaddle/PaddleOCR)
+- [Vision Transformer (ViT) Paper](https://arxiv.org/abs/2010.11929)
+- [ResNet Paper](https://arxiv.org/abs/1512.03385)
+- [VGG16 Paper](https://arxiv.org/abs/1409.1556)
