@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 reader = easyocr.Reader(['en'])
 
 # Load the image
-image_path = 'photos/ashwagandha.jpg'
+image_path = 'photos/expiry_label.png'
 image = cv2.imread(image_path)
 
 # Perform OCR on the image
