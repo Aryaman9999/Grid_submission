@@ -6,7 +6,7 @@ from PIL import Image
 model = AutoModelForVision2Seq.from_pretrained("Qwen/Qwen2-VL-2B-Instruct")  # Placeholder name, update it with the exact model name
 processor = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-2B-Instruct")
 
-image = Image.open('expiry_label.png')
+image = Image.open('photos/expiry_label.png')
 # Preprocess the image using the processor
 inputs = processor(images=image, return_tensors="pt")
 # Define a prompt for the task

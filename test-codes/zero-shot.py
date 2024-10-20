@@ -7,7 +7,7 @@ model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
 processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
 # Load the image
-image = Image.open('rotten-apple.png')
+image = Image.open('photos/rotten-apple.png')
 
 # Prepare the inputs
 inputs = processor(text=["fresh apple", "rotten apple", "fresh tomato", "fresh strawberry"], images=image, return_tensors="pt", padding=True)

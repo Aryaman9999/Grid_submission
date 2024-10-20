@@ -1,9 +1,12 @@
+
+
+
 import torch
 from transformers import AutoModelForImageClassification, AutoFeatureExtractor
 from PIL import Image
 
 
-model_name = "Aryaman9999/maggi-parle-g"
+model_name = "Aryaman9999/Freshness-Fruit_Vegies"
 
 # Load the feature extractor and model
 feature_extractor = AutoFeatureExtractor.from_pretrained(model_name)
@@ -33,14 +36,9 @@ def predict_image(image_path):
 
     # Retrieve the predicted class label from id2label
     predicted_class = label_mapping[predicted_class_idx]
-    if(predicted_class_idx==0):
-        print("maggi")
-    else:
-        print("parle-g")  
-    
-    # print(f"Predicted class: {predicted_class}")
+    print(f"Predicted class: {predicted_class}")
     return predicted_class
 
 # Example usage with an image file path
-image_path = "photos/maggi.jpg"  # Replace with the actual image path
+image_path = "photos/rotten-apple.png"  # Replace with the actual image path
 predicted_class = predict_image(image_path)

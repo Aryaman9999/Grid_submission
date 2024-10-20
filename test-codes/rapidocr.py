@@ -4,7 +4,7 @@ from paddleocr import PaddleOCR
 ocr = PaddleOCR(use_angle_cls=True, lang='en')  # Change 'en' to other language codes as needed
 
 # Path to your image
-image_path = 'expiry_label.png'  # Replace with your actual image path
+image_path = 'photos/ashwagandha.jpg'  # Replace with your actual image path
 
 # Perform OCR
 result = ocr.ocr(image_path, cls=True)

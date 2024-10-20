@@ -107,6 +107,6 @@ def run_inference(image_path, model_path):
     print(f'Predicted Freshness: {predicted_freshness}')
 
 # Example usage
-image_path = 'photos/fresh_apple.png'  # Replace with the path to your image
+image_path = 'photos/rotten-apple.png'  # Replace with the path to your image
 model_path = 'models/model_weights.pth'  # Replace with the path to your saved model weights
 run_inference(image_path, model_path)
