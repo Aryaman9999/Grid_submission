@@ -3,7 +3,7 @@
 This repository contains our solutions for the **Flipkart Grid Challenge**, focusing on various computer vision tasks such as Optical Character Recognition (OCR), image recognition, and freshness detection of fresh produce.
 
 # IMPORTANT
-Models trained by our team have almost 125 downloads on Hugging Face which means many other teams will also be using our model.
+Models trained by our team have almost **125 downloads** on **Hugging Face** which means many other teams will also be using our models.
 
 ## Table of Contents
 
