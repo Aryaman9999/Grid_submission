@@ -2,6 +2,9 @@
 
 This repository contains our solutions for the **Flipkart Grid Challenge**, focusing on various computer vision tasks such as Optical Character Recognition (OCR), image recognition, and freshness detection of fresh produce.
 
+# IMPORTANT
+Models trained by our team have almost 125 downloads on Hugging Face which means many other teams will also be using our model.
+
 ## Table of Contents
 
 - [Competition Overview](#competition-overview)
@@ -43,10 +46,10 @@ The Flipkart Grid Challenge presented multiple tasks aimed at enhancing retail o
 
 - **Objective:** Extract details available on packaging materials, including brand name, pack size, and other relevant information.
 - **Approach:**
+- - **RapidOCR:** Great accuracy on labels.
   - **EasyOCR:** Chosen for its lightweight architecture and good accuracy.
   - **PaddleOCR:** Selected for higher accuracy despite being slower than EasyOCR.
-  - **RapidOCR:** Evaluated as an alternative OCR tool.
-  - **GOT OCR:** Used for multi-column or uniquely formatted labels (requires GPU).
+  - **GOT OCR:** Used for multi-column or uniquely formatted labels (requires GPU*).
   - **Qwen:** Tested for its high accuracy, though it's relatively large in size.
 
 ### 2. Using OCR to Get Expiry Date Details
@@ -58,13 +61,10 @@ The Flipkart Grid Challenge presented multiple tasks aimed at enhancing retail o
 
 ### 3. Image Recognition and Infrared (IR) Based Counting
 
-- **Objective:** Recognize brands and confirm item counts using image recognition and IR data.
+- **Objective:** Recognize brands and confirm item counts using image recognition as we did not have access to IR data.
 - **Approach:**
   - **Brand Recognition:**
     - Finetuned a Vision Transformer (ViT) model on a custom dataset containing images of Parle-G and Maggi packets.
-  - **Counting Items:**
-    - Applied image segmentation techniques to separate individual items.
-    - Used IR data (if available) to enhance counting accuracy.
 
 ### 4. Detecting Freshness of Fresh Produce
 
